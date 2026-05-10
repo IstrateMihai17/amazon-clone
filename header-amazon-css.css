@@ -1,0 +1,121 @@
+@media (min-width:1000px){
+.header{
+    background-color: rgb(19, 25, 33);
+    display:flex;
+    flex-direction:row ;
+    align-items: center; 
+    position:fixed ;
+    top:0 ;
+    left:0 ;
+    right:0 ; 
+    height:70px;
+    z-index: 1000;
+}
+.left-section{
+    flex:1;
+    margin-right:0;
+}
+.logo{
+    height:30px;
+    width:100px; 
+    object-fit:contain;
+    margin-left:50px;
+    cursor:pointer;
+    padding:10px 10px;
+}
+.logo:hover{
+    border-color:white ;
+    border-style:solid;
+    border-width:1px;
+}
+.middle-section{
+    flex:570px;
+    display:grid ;
+    grid-template-columns: 1fr 60px;
+    margin-right:15px;
+}
+.search-bar{
+    margin-left:0px;
+    margin-right:0;
+    padding-left:20px;
+    height:50px;
+    border-radius:5px;
+    border:none ;
+    border-top-right-radius:0 ;
+    border-bottom-right-radius:0;
+    vertical-align: middle;
+}
+.search-bar:focus{
+    outline-style: solid;
+    outline-width:3px;
+    outline-color: orange;
+}
+.search-bar::placeholder{
+    font-family: Arial;
+    font-weight:600;
+    font-size:15px;
+    min-width:0px;
+}
+.search-button{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius:5px ;
+    border-bottom-right-radius:5px;
+    border:none;
+    background-color: rgb(180, 146, 44);
+    vertical-align: middle;
+    cursor:pointer;
+}
+.right-section{
+    display:flex;
+    flex-direction:row ;
+}
+.left-side{
+    display:flex;
+    flex-direction:column ; 
+    align-items: center;
+    position:relative;
+    top:3px;
+    margin-bottom:5px;
+    width:100px;
+    cursor:pointer;
+}
+.top-para{
+    padding-top:5px;
+}
+.top-para ,.bottom-para{
+    margin:0px ;
+    color:white;
+    vertical-align: middle;
+}
+.bottom-para{
+    padding-bottom:10px;
+}
+.right-side{
+    margin-right:10px;
+    width:100px;
+    z-index: 2000000;
+}
+.right-side:hover,.left-side:hover{
+    border-style:solid ;
+    border-width:1px; 
+    border-color:white ;
+    cursor:pointer;
+}
+.cart-image{
+    height:50px ;
+    width:50px;
+    object-fit:contain;
+    position: relative;
+    left:22px;
+}
+.cart-number-css{
+    position:absolute;
+    top:0px ;
+    right:50px ;
+    color:white;
+    font-weight:bold;
+    font-family:Arial;
+    font-size:15px;
+    color:orange;
+}}
